@@ -1,5 +1,4 @@
-export const puzzleInput = `
-gsjgklneight6zqfz
+export const puzzleInput = `gsjgklneight6zqfz
 7one718onegfqtdbtxfcmd
 xvtfhkm8c9
 914two8
@@ -998,5 +997,4 @@ fivetngxlttf4
 gldsixrhss186seven6
 gnpksz4
 4919
-pbc19
-`
+pbc19`
