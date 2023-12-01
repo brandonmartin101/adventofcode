@@ -1,6 +1,7 @@
--- Advent of Code 2023 --- Done with Typescript
+# Advent of Code 2023 
+## Done with Typescript
 
-Clone the repo, and run the following:
+Clone the repo, and run the following to execute the solution for Day 1a:
 
 ```
 npm install
