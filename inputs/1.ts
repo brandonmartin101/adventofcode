@@ -1,3 +1,11 @@
+export const puzzleDemo = `two1nine
+eightwothree
+abcone2threexyz
+xtwone3four
+4nineeightseven2
+zoneight234
+7pqrstsixteen`;
+
 export const puzzleInput = `gsjgklneight6zqfz
 7one718onegfqtdbtxfcmd
 xvtfhkm8c9
@@ -997,4 +1005,4 @@ fivetngxlttf4
 gldsixrhss186seven6
 gnpksz4
 4919
-pbc19`
+pbc19`;
