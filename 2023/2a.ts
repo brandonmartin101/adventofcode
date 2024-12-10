@@ -1,11 +1,7 @@
 import { puzzleInput, puzzleDemo } from './inputs/2.ts';
-const data = puzzleDemo.split('\n');
+// const data = puzzleDemo.split('\n');
+const data = puzzleInput.split('\n');
 const gamesWithSteps = data.map((d) => d.split(':'));
-const stepsOnly = gamesWithSteps.map((d) => d[1].split(';'));
-
-// console.log(data);
-// console.log(gamesWithSteps);
-// console.log(stepsOnly);
 
 const available = {
 	red: 12,
@@ -13,11 +9,21 @@ const available = {
 	blue: 14,
 };
 
+let sumOfIds = 0;
 gamesWithSteps.forEach((game) => {
-	console.log(game);
+	const matchResult = game[0].match(/\d+/) ?? 0;
+	const id = parseInt(matchResult[0]);
 	const draws = game[1].split(';');
-	console.log(draws);
+	let gameValid = true;
 	for (let draw of draws) {
-		console.log(draw);
+		const colorGroup = draw.split(',');
+		for (let color of colorGroup) {
+			const colorNumber = parseInt(color);
+			const colorName = color.replace(/\d+/g, '').trim();
+			if (colorNumber > available[colorName]) gameValid = false;
+		}
 	}
+	if (gameValid) sumOfIds += id;
 });
+
+console.log(sumOfIds);
