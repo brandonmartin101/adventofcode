@@ -1,4 +1,4 @@
-import { puzzleInput, puzzleDemo } from '../inputs/1.ts';
+import { puzzleInput, puzzleDemo } from './inputs/1.ts';
 const data = puzzleInput.split('\n');
 
 let cTotal: number = 0;

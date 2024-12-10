@@ -12,9 +12,16 @@ Vanilla JavaScript, I think
 
 ## Deploy
 
-Clone the repo, and run the following to execute the solution for Day 1a:
+Clone the repo, and run the following to execute the year/solution for a specific day:
 
 ```
 npm install
-npm start solutions/1a
+npm start [year]/[day]
+```
+
+For example, for Day 1a from 2023:
+
+```
+npm install
+npm start 2023/1a
 ```

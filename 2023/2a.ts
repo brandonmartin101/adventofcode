@@ -1,4 +1,4 @@
-import { puzzleInput, puzzleDemo } from '../inputs/2.ts';
+import { puzzleInput, puzzleDemo } from './inputs/2.ts';
 const data = puzzleDemo.split('\n');
 const gamesWithSteps = data.map((d) => d.split(':'));
 const stepsOnly = gamesWithSteps.map((d) => d[1].split(';'));

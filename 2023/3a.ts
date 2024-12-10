@@ -1,4 +1,4 @@
-import { puzzleInput, puzzleDemo } from '../inputs/3.ts';
+import { puzzleInput, puzzleDemo } from './inputs/3.ts';
 const data = puzzleInput.split('\n');
 
 //* find position of all non-period symbols
