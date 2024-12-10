@@ -6,6 +6,10 @@ I'm pulling together all of my Advent of Code solutions over the years and filli
 
 All solutions solved with Typescript.
 
+## 2015 - 2022
+
+Vanilla JavaScript, I think
+
 ## Deploy
 
 Clone the repo, and run the following to execute the solution for Day 1a:
