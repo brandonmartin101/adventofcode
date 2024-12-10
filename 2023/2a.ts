@@ -1,7 +1,7 @@
 import { puzzleInput, puzzleDemo } from './inputs/2.ts';
 // const data = puzzleDemo.split('\n');
 const data = puzzleInput.split('\n');
-const gamesWithSteps = data.map((d) => d.split(':'));
+const games = data.map((d) => d.split(':'));
 
 const available = {
 	red: 12,
@@ -10,7 +10,7 @@ const available = {
 };
 
 let sumOfIds = 0;
-gamesWithSteps.forEach((game) => {
+games.forEach((game) => {
 	const matchResult = game[0].match(/\d+/) ?? 0;
 	const id = parseInt(matchResult[0]);
 	const draws = game[1].split(';');
